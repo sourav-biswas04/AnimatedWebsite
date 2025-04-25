@@ -44,46 +44,43 @@ tl.from(".section1bottom img",{
 page1Animation()
 
 
-
-
-var tl2=gsap.timeline({
-    scrollTrigger:{
-        trigger:".services h3",
-        scroller:"body",
-        start:"top 50%",
-        end:"top 0",
-        scrub:2
+var tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".container",
+      start: "top 80%",
+      end: "top 20%",
+      scrub: 2,
+      markers: true
     }
-})
+  });
 
-tl2.from(".services",{
+  
+  tl2.from(".services",{
     y:30,
     opacity:0
 })
 
-tl2.from(".elem.line1.left",{
-    x:-300,
-    opacity:0,
-    duration:1
-},"anim1")
 
-tl2.from(".elem.line1.right",{
-    x:300,
-    opacity:0,
-    duration:1
-},"anim1")
-
-
-
-tl2.from(".elem.line2.left",{
-    x:-300,
-    opacity:0,
-    duration:1
-},"right")
-
-tl2.from(".elem.line2.right",{
-    x:300,
-    opacity:0,
-    duration:1
-},"right")
-
+  tl2.from(".elem.line1.left", {
+    x: -300,
+    opacity: 0,
+    duration: 1
+  }, "anim1");
+  
+  tl2.from(".elem.line1.right", {
+    x: 300,
+    opacity: 0,
+    duration: 1
+  }, "anim1");
+  
+  tl2.from(".elem.line2.left", {
+    x: -300,
+    opacity: 0,
+    duration: 1
+  }, "anim2");
+  
+  tl2.from(".elem.line2.right", {
+    x: 300,
+    opacity: 0,
+    duration: 1
+  }, "anim2");
