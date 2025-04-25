@@ -48,13 +48,13 @@ var tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".container",
       start: "top 80%",
-      end: "top 20%",
+      end: "top 50%",
       scrub: 2,
       markers: true
     }
   });
 
-  
+
   tl2.from(".services",{
     y:30,
     opacity:0
