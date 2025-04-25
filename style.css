@@ -82,7 +82,7 @@ nav button {
 
 .center-part1 h1 {
   line-height: 1.2;
-  font-size: clamp(40px, 10vw, 110px);
+  font-size: clamp(40px, 10vw, 106px);
   font-family: china;
 }
 
@@ -120,7 +120,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 120px;
+  padding: 250px 120px;
   flex-wrap: wrap;
   gap: 20px;
 }
